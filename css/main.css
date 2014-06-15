@@ -1,0 +1,213 @@
+@charset "utf-8";
+@import url("normalize.css");
+/*@import url("http://fonts.googleapis.com/css?family=Cabin");*/
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-moz-selection {
+    background: hsla(0, 0%, 20%, 1);
+	color: hsla(60, 100%, 99%, 1);
+    text-shadow: none;
+}
+
+::selection {
+    background: hsla(0, 0%, 20%, 1);
+	color: hsla(60, 100%, 99%, 1);
+    text-shadow: none;
+}
+
+html {
+	height: 100%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	   -moz-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+			text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	   -moz-font-smoothing: antialiased;
+		-ms-font-smoothing: antialiased;
+		 -o-font-smoothing: antialiased;
+			font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	height: 100%;
+	min-height: 100%;
+	background: #f4f4f4;
+	color: #2c2c2c;
+	/*font-family: "Cabin", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+	font-family: sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4 {
+	margin: 0 0 10px 0;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 1.8rem;
+}
+
+h2 {
+	font-size: 1.6rem;
+}
+
+/*Main styles
+-----------------------------------------*/
+#update-location {
+	width: 400px;
+	padding: 1rem;
+}
+
+#update-location h1 {
+	border-bottom: 1px solid #ccc;
+}
+
+#update-location h1 > span {
+	font-weight: bold;
+}
+
+#update-location label {
+	width: 28%;
+	display: inline-block;
+	margin-right: 1%;
+	font-size: 1.2rem;
+}
+
+#update-location input, #update-location select {
+	width: 70%;
+	padding: .3rem;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.action {
+	width: 49%;
+	height: 50px;
+	background: #27971f;
+	color: #f4f4f4;
+	font-size: 1.1rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	border: none;
+}
+
+.action:first-of-type {
+	margin-right: 1%;
+}
+
+.action:hover {
+	opacity: .9;
+}
+
+#message {
+	padding: 6px;
+	margin: 10px 0 0 0;
+	border: 1px solid #27971f;
+}
+
+/*-------------------------------------*/
+
+#avatars {
+	width: 400px;
+	padding: 1rem;
+}
+
+.avatar {
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+.avatar:last-of-type {
+	margin-bottom: 0;
+}
+
+.avatar span {
+	display: block;
+}
+
+.status {
+	font-weight: bold;
+}
+
+.timestamp {
+	font-style: italic;
+}
+
+
+/*Helper classes
+-----------------------------------------*/
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
