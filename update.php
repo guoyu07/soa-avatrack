@@ -26,6 +26,15 @@
 			$stmt -> close();
 		}
 		
+		if ($stmt = $db -> prepare("INSERT INTO avatar_history (avatar, world, location, warden, dismissed) VALUES (?, ?, ?, ?, ?)")) {
+			$stmt -> bind_param("ssssi", $avatar, $world, $location, $warden, $dismissed);
+			$stmt -> execute();
+			$stmt -> close();
+		} else {
+			echo "Error: " . $db -> error;
+			$stmt -> close();
+		}
+		
 		$db -> close();
 		
 	}
