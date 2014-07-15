@@ -18,7 +18,8 @@
     
     	<div id="avatars">
 			<?php
-                require "includes/connect.php";
+                require "includes/avatarconnect.php";
+				//require "../../avatarconnect.php";
 				
                 if ($stmt = $db -> prepare("SELECT avatar, world, location, warden, dismissed, UNIX_TIMESTAMP(timeupdated) FROM avatar_locations")) {
                     $stmt -> execute();
@@ -30,7 +31,11 @@
 						if ($dismissed == true) {
 							echo "Dismissed";
 						} else {
-							echo $world . ", " . $location . " with " . $warden;
+							if ($world == "Citadel" || $world == "citadel") {
+								echo $world . ", " . $location . " with " . $warden;
+							} else {
+								echo "World " . $world . ", " . $location . " with " . $warden;
+							}
 						}
 						
 						echo "</span>";

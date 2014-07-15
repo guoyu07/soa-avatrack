@@ -1,5 +1,5 @@
 <?php
-	require "includes/connect.php";
+	require "includes/avatarconnect.php";
 	
 	if (isset($_POST)) {
 		

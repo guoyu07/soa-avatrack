@@ -1,0 +1,7 @@
+
+getStatus();
+
+function getStatus() {
+	
+};
+
